@@ -29,6 +29,7 @@ public class Utilerias {
         System.out.println(" 3.- Ordenar \n"); 
         System.out.println(" 4.- Salir \n"); 
     }
+
     // Imprimir arreglo de enteros
     public static void printArray(int arr[]) { 
         int n = arr.length; 
@@ -36,6 +37,7 @@ public class Utilerias {
             System.out.print(arr[i] + " "); 
         System.out.println(); 
     } 
+    
     // Imprimir Resultados
     public static void printResult(int iteraciones , int cambios, int[]arr){
         System.out.println(" ----- Resultados -----");
@@ -50,6 +52,7 @@ public class Utilerias {
         Random random = new Random();
         return random.nextInt(max - min) + min;
     }
+
     //LLenando random arreglo int
     public static int[] arrInt(int n){
         int arr [];
@@ -59,6 +62,7 @@ public class Utilerias {
         }
         return arr;
     }
+
     // LLenado de arreglo por usuario
     public static int[] arrUsInt(int k){
         int L[] = new int [k]; 
