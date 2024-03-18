@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709245991.39574 "d:/Escuela/EDA 2/Proyectos/Proyecto1/Reporte/Documentacion.tex" "Documentacion.pdf" "Documentacion" 1709245993.86971 0
-  "C:/Users/zarat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1707794970 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1710799817.76246 "d:/Escuela/EDA_2/Proyectos/Proyecto1/Trabajo escrito/TrabajoEscrito.tex" "TrabajoEscrito.pdf" "TrabajoEscrito" 1710799819.12904 0
+  "C:/Users/zarat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710795669 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/zarat/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707794686 23178960 a1b7d2308d24d21559a075efc84b8c2a ""
   "C:/Users/zarat/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/zarat/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
@@ -73,13 +73,13 @@
   "C:/Users/zarat/AppData/Local/Programs/MiKTeX/tex/latex/subfig/subfig.sty" 1121306210 22049 9ef165ca6df8815c92e693146a376c92 ""
   "C:/Users/zarat/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/zarat/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Documentacion.aux" 1709245993 811 5ed89fc225bc808f975bdfe668ce539c "pdflatex"
-  "Documentacion.out" 1709245993 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Documentacion.tex" 1709245990 3552 59397c9336928d70c1e245523d3bb484 ""
-  "d:/Escuela/EDA 2/Proyectos/Proyecto1/Reporte/Documentacion.tex" 1709245990 3552 59397c9336928d70c1e245523d3bb484 ""
+  "TrabajoEscrito.aux" 1710799818 811 df95adf58379bcef2fc8abb7859f7df6 "pdflatex"
+  "TrabajoEscrito.out" 1710799818 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "TrabajoEscrito.tex" 1710796243 6857 8fbaa69f2f68109f43e15a2b18c7198b ""
+  "d:/Escuela/EDA_2/Proyectos/Proyecto1/Trabajo escrito/TrabajoEscrito.tex" 1710796243 6857 8fbaa69f2f68109f43e15a2b18c7198b ""
   (generated)
-  "Documentacion.aux"
-  "Documentacion.log"
-  "Documentacion.out"
-  "Documentacion.pdf"
+  "TrabajoEscrito.aux"
+  "TrabajoEscrito.log"
+  "TrabajoEscrito.out"
+  "TrabajoEscrito.pdf"
   (rewritten before read)

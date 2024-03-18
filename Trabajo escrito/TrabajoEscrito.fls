@@ -1,7 +1,7 @@
-PWD d:\Escuela\EDA 2\Proyectos\Proyecto1\Reporte
+PWD d:\Escuela\EDA_2\Proyectos\Proyecto1\Trabajo escrito
 INPUT C:\Users\zarat\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Escuela\EDA 2\Proyectos\Proyecto1\Reporte\Documentacion.tex
-OUTPUT Documentacion.log
+INPUT d:\Escuela\EDA_2\Proyectos\Proyecto1\Trabajo escrito\TrabajoEscrito.tex
+OUTPUT TrabajoEscrito.log
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -588,10 +588,10 @@ INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Documentacion.aux
-INPUT Documentacion.aux
-INPUT Documentacion.aux
-OUTPUT Documentacion.aux
+INPUT .\TrabajoEscrito.aux
+INPUT TrabajoEscrito.aux
+INPUT TrabajoEscrito.aux
+OUTPUT TrabajoEscrito.aux
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -612,24 +612,26 @@ INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT .\Documentacion.out
-INPUT Documentacion.out
-INPUT .\Documentacion.out
-INPUT Documentacion.out
-INPUT .\Documentacion.out
-INPUT Documentacion.out
-INPUT .\Documentacion.out
-INPUT Documentacion.out
-INPUT .\Documentacion.out
-INPUT .\Documentacion.out
-OUTPUT Documentacion.out
-OUTPUT Documentacion.pdf
+INPUT .\TrabajoEscrito.out
+INPUT TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
+INPUT TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
+INPUT TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
+INPUT TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
+OUTPUT TrabajoEscrito.out
+OUTPUT TrabajoEscrito.pdf
+INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\zarat\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT Documentacion.aux
-INPUT .\Documentacion.out
-INPUT .\Documentacion.out
+INPUT TrabajoEscrito.aux
+INPUT .\TrabajoEscrito.out
+INPUT .\TrabajoEscrito.out
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\zarat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
