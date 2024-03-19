@@ -11,7 +11,7 @@ public class HeapSort {
         System.out.println("\n\t\tHas llamado a Heap Sort Ascendente.\n");
         buildHeapASC(A);
         for (int i = A.length - 1; i > 0; i--) {
-            Utilidades_HeapSort.swap(A, 0, heapSize);
+            Utilerias.swap(A, 0, heapSize);
             heapSize--;
             System.out.println("Iteracion HS: ");
             Utilerias.printArray(A);
@@ -33,7 +33,7 @@ public class HeapSort {
             largest = r;
 
         if (largest != i) {
-            Utilidades_HeapSort.swap(A, i, largest);
+            Utilerias.swap(A, i, largest);
             Utilerias.printArray(A);
             heapifyASC(A, largest);
         }
