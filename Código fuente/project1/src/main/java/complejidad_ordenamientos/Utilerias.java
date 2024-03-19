@@ -73,20 +73,16 @@ public class Utilerias {
     ///UTILIDADES PARA LLENAR ARREGLO////
    /////////////////////////////////////
 
-    //Enteros Random 
-    public static int randomInt(int min, int max) {
-        Random random = new Random();
-        return random.nextInt(max - min) + min;
-    }
+    //LLenado Random
+    public static int[] llenarArregloConAleatorios(int n) {
+        Random rand = new Random();
+        int[] arreglo = new int[n];
 
-    //LLenando random arreglo int
-    public static int[] arrInt(int n){
-        int arr [];
-        arr=new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=randomInt(1,30);
+        for (int i = 0; i < n; i++) {
+            // Genera un número aleatorio entre 1000 y 9999 (4 dígitos)
+            arreglo[i] = 1000 + rand.nextInt(9000);
         }
-        return arr;
+        return arreglo;
     }
 
     // LLenado de arreglo por usuario
