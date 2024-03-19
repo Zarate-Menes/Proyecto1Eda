@@ -23,7 +23,7 @@ public class Main{
 
             InsertionSort.insertionSort(elementos);
             System.out.println("Lista ordenada:");
-            InsertionSort.imprimirArreglo(elementos);
+            Utilerias.printArray(elementos);
             System.out.println("*****************************");
         
 	}

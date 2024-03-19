@@ -2,12 +2,13 @@ package complejidad_ordenamientos;
 
 public class InsertionSort{
 
-	public static void imprimirArreglo(int[] arreglo) {
-        for (int var : arreglo) {
-            System.out.print(var + " ");
-        }
-        System.out.println();
-    }
+    //Usamos el método existente en Utilerias.java
+	// public static void imprimirArreglo(int[] arreglo) {
+    //     for (int var : arreglo) {
+    //         System.out.print(var + " ");
+    //     }
+    //     System.out.println();
+    // }
 
     public static void insertionSort(int[] arreglo) {
         //contadores

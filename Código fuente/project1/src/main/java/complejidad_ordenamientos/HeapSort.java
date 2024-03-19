@@ -1,3 +1,8 @@
+//Autor: Zarate Menes Quetzalli
+//Fecha de última modificación: 19/03/2024
+//Propósito del archivo: 
+//
+
 package complejidad_ordenamientos;
 
 public class HeapSort {
@@ -6,10 +11,10 @@ public class HeapSort {
         System.out.println("\n\t\tHas llamado a Heap Sort Ascendente.\n");
         buildHeapASC(A);
         for (int i = A.length - 1; i > 0; i--) {
-            swap(A, 0, heapSize);
+            Utilidades_HeapSort.swap(A, 0, heapSize);
             heapSize--;
             System.out.println("Iteracion HS: ");
-            printArray(A);
+            Utilerias.printArray(A);
             heapifyASC(A, 0);
         }
     }
@@ -28,8 +33,8 @@ public class HeapSort {
             largest = r;
 
         if (largest != i) {
-            swap(A, i, largest);
-            printArray(A);
+            Utilidades_HeapSort.swap(A, i, largest);
+            Utilerias.printArray(A);
             heapifyASC(A, largest);
         }
     }
@@ -42,18 +47,6 @@ public class HeapSort {
         System.out.println("Terminó de construir el HEAP");
     }
 
-    private void swap(int[] A, int a, int b) {
-        int t = A[a];
-        A[a] = A[b];
-        A[b] = t;
-    }
-
-    private void printArray(int[] A) {
-        for (int i : A) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
 }
 
 //------------------//

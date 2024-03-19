@@ -1,3 +1,8 @@
+//Autor: Zarate Menes Quetzalli
+//Fecha de última modificación: 19/03/2024
+//Propósito del archivo: 
+//
+
 package complejidad_ordenamientos;
 
 public class Utilidades_HeapSort {
@@ -8,7 +13,7 @@ public class Utilidades_HeapSort {
         System.out.println();
     }
     
-    public void swap(int[] arr, int a, int b) {
+    public static void swap(int[] arr, int a, int b) {
         int t = arr[a];
         arr[a] = arr[b];
         arr[b] = t;

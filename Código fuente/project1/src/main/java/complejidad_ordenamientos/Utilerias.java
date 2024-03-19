@@ -1,8 +1,16 @@
+//Autor: Zarate Menes Quetzalli
+//Fecha de última modificación: 19/03/2024
+//Propósito del archivo: 
+//
+
 package complejidad_ordenamientos;
 
 import java.util.Random;
 import java.util.Scanner;
 public class Utilerias {
+     ///////////////////////////////
+    ///UTILIDADES PARA MENU////////
+   ///////////////////////////////
     // Menu Principal
     public static void menu(){
         // Introducción
@@ -30,6 +38,11 @@ public class Utilerias {
         System.out.println(" 4.- Salir \n"); 
     }
 
+    
+     ///////////////////////////////
+    ///UTILIDADES PARA ARREGLOS////
+   ///////////////////////////////
+
     // Imprimir arreglo de enteros
     public static void printArray(int arr[]) { 
         int n = arr.length; 
@@ -37,16 +50,29 @@ public class Utilerias {
             System.out.print(arr[i] + " "); 
         System.out.println(); 
     } 
-    
-    // Imprimir Resultados
-    public static void printResult(int iteraciones , int cambios, int[]arr){
-        System.out.println(" ----- Resultados -----");
-        System.out.print("Arreglo ordenado: ");
-        printArray(arr);
-        System.out.print(" ");
-        System.out.println(" * Iteraciones realizadas: "+ iteraciones);
-        System.out.println(" * Cambios de elementos realizados: "+ cambios);
+
+    //Imprimir sub-arreglo
+    public static void printSubArray(int[] arr, int low, int high) {
+        System.out.print("Sub array : ");
+        for (int i = low; i <= high; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println();
     }
+    
+    //Intercambio
+    public static void swap(int[] arr, int a, int b) {
+        int t = arr[a];
+        arr[a] = arr[b];
+        arr[b] = t;
+    }
+    
+
+
+
+     /////////////////////////////////////
+    ///UTILIDADES PARA LLENAR ARREGLO////
+   /////////////////////////////////////
+
     //Enteros Random 
     public static int randomInt(int min, int max) {
         Random random = new Random();
@@ -77,4 +103,19 @@ public class Utilerias {
         numero.close();
         return L;
     }
+
+
+     ///////////////////////////////////////////
+    ///UTILIDADES PARA ANALISIS COMPLEJIDAD////
+   ///////////////////////////////////////////
+        // Imprimir Resultados
+        public static void printResult(int iteraciones , int cambios, int[]arr){
+            System.out.println(" ----- Resultados -----");
+            System.out.print("Arreglo ordenado: ");
+            printArray(arr);
+            System.out.print(" ");
+            System.out.println(" * Iteraciones realizadas: "+ iteraciones);
+            System.out.println(" * Cambios de elementos realizados: "+ cambios);
+        }
 }
+

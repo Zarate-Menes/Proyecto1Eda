@@ -19,16 +19,16 @@ public class QuickSort{
         System.out.println();
     }
 
-
-    public void printSubArray(int[] arr, int low, int high) {
-        if (low <= high) { // Asegura que el subarreglo no esté vacío
-            System.out.print("Sub array: ");
-            for (int i = low; i <= high; i++) {
-                System.out.print(arr[i] + " ");
-            }
-            System.out.println();
-        }
-    }
+//Cambiado a Utilerias.java para modularidad de programas 
+    // public void printSubArray(int[] arr, int low, int high) {
+    //     if (low <= high) { // Asegura que el subarreglo no esté vacío
+    //         System.out.print("Sub array: ");
+    //         for (int i = low; i <= high; i++) {
+    //             System.out.print(arr[i] + " ");
+    //         }
+    //         System.out.println();
+    //     }
+    // }
 
     public int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
@@ -52,11 +52,11 @@ public class QuickSort{
         if (low < high) {
             int pi = partition(arr, low, high);
             if (low < pi - 1) { 
-                printSubArray(arr, low, pi - 1);
+                Utilerias.printSubArray(arr, low, pi - 1);
                 quickSort(arr, low, pi - 1);
             }
             if (pi + 1 < high) { 
-                printSubArray(arr, pi + 1, high);
+                Utilerias.printSubArray(arr, pi + 1, high);
                 quickSort(arr, pi + 1, high);
             }
         }

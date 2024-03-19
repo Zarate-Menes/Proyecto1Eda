@@ -1,3 +1,8 @@
+//Autor: Zarate Menes Quetzalli
+//Fecha de última modificación: 19/03/2024
+//Propósito del archivo: 
+//
+
 package complejidad_ordenamientos;
 
 public class MergeSort {
