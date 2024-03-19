@@ -24,7 +24,7 @@ public class Main {
             System.out.println("\n***ORDENAMIENTO CON InsertionSort***");
             System.out.println("\nArreglo ORIGINAL: ");
             Utilerias.printArray(ArregloDesordenado);
-
+            InsertionSort.insertionSort(ArregloAOrdenar);
             System.out.println("\nLista ordenada:");
             Utilerias.printArray(ArregloAOrdenar);
 
