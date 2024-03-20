@@ -8,13 +8,10 @@ package complejidad_ordenamientos;
 public class HeapSort {
     private static int heapSize;
     public static void heapSortASC(int[] A) {
-        System.out.println("\n\t\tHas llamado a Heap Sort.\n");
         buildHeapASC(A);
         for (int i = A.length - 1; i > 0; i--) {
             Utilerias.swap(A, 0, heapSize);
             heapSize--;
-            System.out.println("Iteracion HS: ");
-            Utilerias.printArray(A);
             heapifyASC(A, 0);
         }
     }
@@ -34,7 +31,6 @@ public class HeapSort {
 
         if (largest != i) {
             Utilerias.swap(A, i, largest);
-            Utilerias.printArray(A);
             heapifyASC(A, largest);
         }
     }
@@ -44,7 +40,6 @@ public class HeapSort {
         for (int i = heapSize / 2; i >= 0; i--) {
             heapifyASC(A, i);
         }
-        System.out.println("Terminó de construir el HEAP");
     }
 
 }
