@@ -129,15 +129,15 @@ public class Utilerias {
         scanner.close();
     }
 
-    // Submenu
-    public static void submenu() {
-        // Submenu
-        System.out.println("------ Menu -------\n");
-        System.out.println(" 1.- Llenar Arreglo \n");
-        System.out.println(" 2.- Mostrar Arreglo (Original y Ordenado)\n");
-        System.out.println(" 3.- Ordenar \n");
-        System.out.println(" 4.- Salir \n");
-    }
+    // // Submenu
+    // public static void submenu() {
+    //     // Submenu
+    //     System.out.println("------ Menu -------\n");
+    //     System.out.println(" 1.- Llenar Arreglo \n");
+    //     System.out.println(" 2.- Mostrar Arreglo (Original y Ordenado)\n");
+    //     System.out.println(" 3.- Ordenar \n");
+    //     System.out.println(" 4.- Salir \n");
+    // }
 
     ///////////////////////////////
     /// UTILIDADES PARA ARREGLOS////
