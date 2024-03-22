@@ -72,6 +72,8 @@ public class Utilerias {
                         HeapSort.heapSortASC(ArregloAOrdenar);
                         System.out.println("\nLista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        System.out.println("");
+                        HeapSort.imprimirContadores();
                         break;
 
                     case 4:
@@ -87,9 +89,11 @@ public class Utilerias {
                         // Prueba 5to algoritmo
                         System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
                         System.out.println("\n***ORDENAMIENTO CON Quicksort***");
-
+                        QuickSort.quickSort(ArregloAOrdenar, 0, size-1);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        System.out.println("");
+                        QuickSort.imprimirContadores();
                         break;
 
                     case 6:
@@ -99,6 +103,8 @@ public class Utilerias {
                         MergeSort.mergeSort(ArregloAOrdenar, 0, size - 1);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        System.out.println("");
+                        MergeSort.imprimirContadores();
                         break;
 
                     case 7:
@@ -108,6 +114,8 @@ public class Utilerias {
                         CountingSort.countingSort(ArregloAOrdenar, size);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        System.out.println("");
+                        CountingSort.imprimirContadores();
                         break;
 
                     default:
@@ -151,13 +159,14 @@ public class Utilerias {
         System.out.println();
     }
 
-    // Imprimir sub-arreglo
-    public static void printSubArray(int[] arr, int low, int high) {
-        System.out.print("Sub array : ");
-        for (int i = low; i <= high; i++)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
+    // POR EL MOEMNTO NO SE USA, YA QUE ES MÁS ENGORROSO ESTAR IMPRIMIENDO LOS SUBARREGLOS Y SOLO QUEREMOS REVISAR LA COMPLEJIDAD
+    // // Imprimir sub-arreglo
+    // public static void printSubArray(int[] arr, int low, int high) {
+    //     System.out.print("Sub array : ");
+    //     for (int i = low; i <= high; i++)
+    //         System.out.print(arr[i] + " ");
+    //     System.out.println();
+    // }
 
     // Intercambio
     public static void swap(int[] arr, int a, int b) {
@@ -203,11 +212,13 @@ public class Utilerias {
     /// UTILIDADES PARA ANALISIS COMPLEJIDAD////
     ///////////////////////////////////////////
     // Imprimir Resultados
-    public static void printResult(int iteraciones, int cambios, int comparaciones) {
-        System.out.println(" \n ----- Resultados -----");
-        System.out.print(" ");
-        System.out.println(" \n* Iteraciones realizadas: " + iteraciones);
-        System.out.println(" \n* Cambios de elementos realizados: " + cambios);
-        System.out.println(" \n*Comparaciones realizadas: " + comparaciones);
-    }
+    // public static void printResult(int inserciones, int intercambios, int comparaciones) {
+    //     System.out.println("----- Resultados -----");
+    //     System.out.println("* Inserciones realizadas: " + inserciones);
+    //     System.out.println("* Intercambios de elementos realizados: " + intercambios);
+    //     System.out.println("* Comparaciones realizadas: " + comparaciones + "\n");
+        
+    // }
+
+    
 }
