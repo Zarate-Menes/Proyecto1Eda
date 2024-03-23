@@ -24,7 +24,7 @@ public class MergeSort {
         int k = 0;
 
         while (i <= mid && j <= last) {
-            COMPARACIONES=+2;
+            COMPARACIONES+=2;
             if (list[i] < list[j]) {
                 COMPARACIONES++;
                 INSERCIONES++;

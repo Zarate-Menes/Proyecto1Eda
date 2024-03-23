@@ -27,14 +27,14 @@ public class HeapSort {
 
         if (l <= heapSize && A[l] > A[i]){
             largest = l;
-            COMPARACIONES=+2;
+            COMPARACIONES+=2;
         }
         else
             largest = i;
 
         if (r <= heapSize && A[r] > A[largest]){
             largest = r;
-            COMPARACIONES=+2;
+            COMPARACIONES+=2;
         }
             
         if (largest != i) {

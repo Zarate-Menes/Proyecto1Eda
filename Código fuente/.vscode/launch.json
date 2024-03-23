@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "project1.src.main.java.complejidad_ordenamientos.Main",
+      "projectName": "Código fuente_649e9380"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "complejidad_ordenamientos.Main",
       "projectName": "project1"
     },
