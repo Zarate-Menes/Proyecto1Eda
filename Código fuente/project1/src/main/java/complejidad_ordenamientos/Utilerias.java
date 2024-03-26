@@ -1,7 +1,7 @@
 //Autor: Zarate Menes Quetzalli
 //Fecha de última modificación: 19/03/2024
-//Propósito del archivo: 
-//
+//Propósito del archivo: Reunir los métodos necesarios para el uso del proyecto actual, y así hacer lograr 
+//una programación modular 
 
 package complejidad_ordenamientos;
 
@@ -54,15 +54,17 @@ public class Utilerias {
                         InsertionSort.insertionSort(ArregloAOrdenar);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        InsertionSort.imprimirContadores();
                         break;
 
                     case 2:
                         // Prueba 2do algoritmo
                         System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
                         System.out.println("\n***ORDENAMIENTO CON SelectionSort***");
-
+                        SelectionSort.selection(ArregloAOrdenar);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        SelectionSort.imprimirContadores();
                         break;
 
                     case 3:
@@ -80,16 +82,17 @@ public class Utilerias {
                         // Prueba 4to algoritmo
                         System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
                         System.out.println("\n***ORDENAMIENTO CON BubbleSort***");
-
+                        BubbleSort.bubbleSort(ArregloAOrdenar);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
+                        BubbleSort.imprimirContadores();
                         break;
 
                     case 5:
                         // Prueba 5to algoritmo
                         System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
                         System.out.println("\n***ORDENAMIENTO CON Quicksort***");
-                        QuickSort.quickSort(ArregloAOrdenar, 0, size-1);
+                        QuickSort.quickSort(ArregloAOrdenar, 0, size - 1);
                         System.out.println("Lista ordenada:");
                         Utilerias.printArray(ArregloAOrdenar);
                         System.out.println("");
@@ -137,15 +140,49 @@ public class Utilerias {
         scanner.close();
     }
 
-    // // Submenu
-    // public static void submenu() {
-    //     // Submenu
-    //     System.out.println("------ Menu -------\n");
-    //     System.out.println(" 1.- Llenar Arreglo \n");
-    //     System.out.println(" 2.- Mostrar Arreglo (Original y Ordenado)\n");
-    //     System.out.println(" 3.- Ordenar \n");
-    //     System.out.println(" 4.- Salir \n");
-    // }
+    // Sinceramente me dio flojera ejecutar uno por uno los arreglos y mi
+    // computadora era capaz de hacer esto, por eso lo hice en un ciclo iterativo
+    public static void PruebaProfe() {
+        Scanner scanner = new Scanner(System.in);
+        int contHeapSort, contMergueSort, contCountingSort, j, i;
+        for (i = 1; i <= 8; i++) {
+            contHeapSort = 0;
+            contMergueSort = 0;
+            contCountingSort = 0;
+            System.out.println("\n¿Que tamaño de arreglo te gustaría probar?\t");
+            int size = scanner.nextInt();
+            for (j = 1; j <= 5; j++) {
+                System.out.println("\n\t\tEJECUCIÓN NO " + j);
+                int[] ArregloDesordenado = Utilerias.llenarArregloConAleatorios(size);
+
+                int[] ArregloAOrdenar = new int[ArregloDesordenado.length];
+
+                // Prueba 3er algoritmo
+                System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
+                System.out.println("***ORDENAMIENTO CON Heapsort***");
+                HeapSort.heapSortASC(ArregloAOrdenar);
+                contHeapSort += HeapSort.retunContadores();
+                HeapSort.imprimirContadores();
+
+                // Prueba 6to algoritmo
+                System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
+                System.out.println("***ORDENAMIENTO CON MergeSort***");
+                MergeSort.mergeSort(ArregloAOrdenar, 0, size - 1);
+                contMergueSort += MergeSort.retornarContadores();
+                MergeSort.imprimirContadores();
+
+                // Prueba 7mo algoritmo OPCIONAL
+                System.arraycopy(ArregloDesordenado, 0, ArregloAOrdenar, 0, ArregloDesordenado.length);
+                System.out.println("***ORDENAMIENTO CON CountingSort***");
+                CountingSort.countingSort(ArregloAOrdenar, size);
+                contCountingSort += CountingSort.retornarContadores();
+                CountingSort.imprimirContadores();
+            }
+            System.out.println("\nPromedio ejecucionesHeapSort: " + contHeapSort / 5 + "\tPromedio ejecucionesMergueSort: "
+                            + contMergueSort / 5 + "\tPromedio ejecucionesCountingSort: " + contCountingSort / 5);
+        }
+        scanner.close();
+    }
 
     ///////////////////////////////
     /// UTILIDADES PARA ARREGLOS////
@@ -159,13 +196,14 @@ public class Utilerias {
         System.out.println();
     }
 
-    // POR EL MOEMNTO NO SE USA, YA QUE ES MÁS ENGORROSO ESTAR IMPRIMIENDO LOS SUBARREGLOS Y SOLO QUEREMOS REVISAR LA COMPLEJIDAD
+    // POR EL MOEMNTO NO SE USA, YA QUE ES MÁS ENGORROSO ESTAR IMPRIMIENDO LOS
+    // SUBARREGLOS Y SOLO QUEREMOS REVISAR LA COMPLEJIDAD
     // // Imprimir sub-arreglo
     // public static void printSubArray(int[] arr, int low, int high) {
-    //     System.out.print("Sub array : ");
-    //     for (int i = low; i <= high; i++)
-    //         System.out.print(arr[i] + " ");
-    //     System.out.println();
+    // System.out.print("Sub array : ");
+    // for (int i = low; i <= high; i++)
+    // System.out.print(arr[i] + " ");
+    // System.out.println();
     // }
 
     // Intercambio
@@ -191,34 +229,18 @@ public class Utilerias {
         return arreglo;
     }
 
-    // Si se deasea iniciar un arreglo manualmente, creo que es mejor establecer un
-    // arreglo en el Main.java y solo modificarlo como variable.
-    // // LLenado de arreglo por usuario
-    // public static int[] arrUsInt(int k){
-    // int L[] = new int [k];
-    // Scanner numero=new Scanner(System.in);
-    // int e;
-    // for(int i=0; i<k; i++){
-    // System.out.print("Dame el número en posición "+i+" :");
-    // e=numero.nextInt();
-    // L[i]=e;
-    // }
-    // printArray(L);
-    // numero.close();
-    // return L;
-    // }
-
     ///////////////////////////////////////////
     /// UTILIDADES PARA ANALISIS COMPLEJIDAD////
     ///////////////////////////////////////////
     // Imprimir Resultados
-    // public static void printResult(int inserciones, int intercambios, int comparaciones) {
-    //     System.out.println("----- Resultados -----");
-    //     System.out.println("* Inserciones realizadas: " + inserciones);
-    //     System.out.println("* Intercambios de elementos realizados: " + intercambios);
-    //     System.out.println("* Comparaciones realizadas: " + comparaciones + "\n");
-        
+    // public static void printResult(int inserciones, int intercambios, int
+    /////////////////////////////////////////// comparaciones) {
+    // System.out.println("----- Resultados -----");
+    // System.out.println("* Inserciones realizadas: " + inserciones);
+    // System.out.println("* Intercambios de elementos realizados: " +
+    /////////////////////////////////////////// intercambios);
+    // System.out.println("* Comparaciones realizadas: " + comparaciones + "\n");
+
     // }
 
-    
 }
